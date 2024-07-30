@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Entrada al usuario
+        var empresa = "***CODESI S.A. de C.V.***";
+        var folio = (prompt("Folio del producto: ", "folio"));
+        var nombreproducto = prompt("Nombre del producto: ", "producto");
+        var piezas = parseInt(prompt("Piezas a comprar: ", "piezas"));
+        var precio = parseFloat(prompt("Precio unitario: ", "precio"));
+
+        //Valores
+        var subtotal = piezas * precio;
+        var iva = subtotal * 16;
+        var total = subtotal + iva;
+
+        //Impresión de la salida
+        document.write(empresa + "<br/>");
+        document.write("Folio: " + folio + "<br/>");
+        document.write("Producto: " + nombreproducto + "<br/>");
+        document.write("Piezas: " + piezas + "<br/>");
+        document.write("Precio: ", + precio + "<br/>");
+        document.write("Subtotal: " + subtotal + "<br/>");
+        document.write("I.V.A: " + iva + "<br/>");
+        document.write("Total: " + total + "<br/>");
+    </script> 
+</body>
+</html>
